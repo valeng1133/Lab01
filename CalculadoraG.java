@@ -34,7 +34,7 @@ public class CalculadoraG extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        Pantalla = new javax.swing.JLabel();
         jButtonnum8 = new javax.swing.JButton();
         jButtonPorcentaje = new javax.swing.JButton();
         jButtonMultipliciacion = new javax.swing.JButton();
@@ -124,11 +124,17 @@ public class CalculadoraG extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(204, 153, 255));
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jLabel1.setOpaque(true);
+        Pantalla.setBackground(new java.awt.Color(255, 255, 255));
+        Pantalla.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        Pantalla.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Pantalla.setOpaque(true);
 
         jButtonnum8.setText("8");
+        jButtonnum8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonnum8ActionPerformed(evt);
+            }
+        });
 
         jButtonPorcentaje.setText("%");
 
@@ -140,10 +146,25 @@ public class CalculadoraG extends javax.swing.JFrame {
         });
 
         jButtonnum9.setText("9");
+        jButtonnum9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonnum9ActionPerformed(evt);
+            }
+        });
 
         jButtonnum5.setText("5");
+        jButtonnum5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonnum5ActionPerformed(evt);
+            }
+        });
 
         jButtonnum4.setText("4");
+        jButtonnum4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonnum4ActionPerformed(evt);
+            }
+        });
 
         jButtonResta.setText("-");
 
@@ -155,10 +176,25 @@ public class CalculadoraG extends javax.swing.JFrame {
         });
 
         jButtonnum6.setText("6");
+        jButtonnum6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonnum6ActionPerformed(evt);
+            }
+        });
 
         jButtonnum2.setText("2");
+        jButtonnum2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonnum2ActionPerformed(evt);
+            }
+        });
 
         jButtonnum1.setText("1");
+        jButtonnum1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonnum1ActionPerformed(evt);
+            }
+        });
 
         jButtonDivision.setText("/");
 
@@ -170,16 +206,36 @@ public class CalculadoraG extends javax.swing.JFrame {
         });
 
         jButtonnum3.setText("3");
+        jButtonnum3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonnum3ActionPerformed(evt);
+            }
+        });
 
         jButtonnum0.setText("0");
+        jButtonnum0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonnum0ActionPerformed(evt);
+            }
+        });
 
         jButtonborrar.setText("C");
 
         jButtonIgual.setText("=");
 
         jButtonfpunto.setText(".");
+        jButtonfpunto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonfpuntoActionPerformed(evt);
+            }
+        });
 
         jButtonnum7.setText("7");
+        jButtonnum7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonnum7ActionPerformed(evt);
+            }
+        });
 
         jButtonPotencia2.setText("x²");
 
@@ -204,7 +260,7 @@ public class CalculadoraG extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Pantalla, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -276,7 +332,7 @@ public class CalculadoraG extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Pantalla, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -338,7 +394,7 @@ public class CalculadoraG extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonMultipliciacionActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
+    this.Pantalla.setText(this.Pantalla.getText() + "9");
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButtonfRaizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonfRaizActionPerformed
@@ -348,6 +404,50 @@ public class CalculadoraG extends javax.swing.JFrame {
     private void jButtonSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSumaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonSumaActionPerformed
+
+    private void jButtonnum0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonnum0ActionPerformed
+    this.Pantalla.setText(this.Pantalla.getText() + "0");
+    }//GEN-LAST:event_jButtonnum0ActionPerformed
+
+    private void jButtonnum3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonnum3ActionPerformed
+    this.Pantalla.setText(this.Pantalla.getText() + "3");
+    }//GEN-LAST:event_jButtonnum3ActionPerformed
+
+    private void jButtonnum2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonnum2ActionPerformed
+    this.Pantalla.setText(this.Pantalla.getText() + "2");
+    }//GEN-LAST:event_jButtonnum2ActionPerformed
+
+    private void jButtonnum1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonnum1ActionPerformed
+    this.Pantalla.setText(this.Pantalla.getText() + "1");
+    }//GEN-LAST:event_jButtonnum1ActionPerformed
+
+    private void jButtonnum4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonnum4ActionPerformed
+    this.Pantalla.setText(this.Pantalla.getText() + "4");
+    }//GEN-LAST:event_jButtonnum4ActionPerformed
+
+    private void jButtonnum5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonnum5ActionPerformed
+    this.Pantalla.setText(this.Pantalla.getText() + "5");
+    }//GEN-LAST:event_jButtonnum5ActionPerformed
+
+    private void jButtonnum6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonnum6ActionPerformed
+    this.Pantalla.setText(this.Pantalla.getText() + "6");
+    }//GEN-LAST:event_jButtonnum6ActionPerformed
+
+    private void jButtonnum7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonnum7ActionPerformed
+    this.Pantalla.setText(this.Pantalla.getText() + "7");
+    }//GEN-LAST:event_jButtonnum7ActionPerformed
+
+    private void jButtonnum8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonnum8ActionPerformed
+    this.Pantalla.setText(this.Pantalla.getText() + "8");
+    }//GEN-LAST:event_jButtonnum8ActionPerformed
+
+    private void jButtonnum9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonnum9ActionPerformed
+    this.Pantalla.setText(this.Pantalla.getText() + "9");
+    }//GEN-LAST:event_jButtonnum9ActionPerformed
+
+    private void jButtonfpuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonfpuntoActionPerformed
+    this.Pantalla.setText(this.Pantalla.getText() + ".");
+    }//GEN-LAST:event_jButtonfpuntoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -385,6 +485,7 @@ public class CalculadoraG extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Pantalla;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton6;
@@ -417,7 +518,6 @@ public class CalculadoraG extends javax.swing.JFrame {
     private javax.swing.JButton jButtonnum7;
     private javax.swing.JButton jButtonnum8;
     private javax.swing.JButton jButtonnum9;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
